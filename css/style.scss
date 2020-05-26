@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP";
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  background-image: url("../img/2036020_m.jpg");
+  background-size: cover;
+}
+
+header{
+  z-index: 0;
+}
+
+#menu_show {
+  position: fixed;
+  right: 2.0rem;
+  top: 2.0rem;
+  opacity: 1.0;
+  transition: .3s;
+  z-index: 10;
+
+  img {
+    width: 5.0rem;
+    display: block;
+  }
+
+  &.hidden {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+
+#nav {
+  position: relative;
+  background: #ccc;
+
+  ul {
+    position: fixed;
+    top: 0;
+    list-style: none;
+    right: -20rem;
+    transition: .3s;
+    z-index: 8;
+    width: 20rem;
+    height: 100vh;
+    padding-top: 15.0rem;
+    background-color: #fff;
+
+    &.active {
+      right: 0rem;
+    }
+
+    li {
+      a {
+        background-color: #999;
+      }
+    }
+  }
+
+  #menu_close {
+    position: fixed;
+    right: 2.0rem;
+    top: 2.0rem;
+    opacity: 1.0;
+    transition: .3s;
+    z-index: 10;
+
+    img {
+      width: 5.0rem;
+      display: block;
+    }
+
+    &.hidden {
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+}
+
+#mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background:#123;
+  opacity: 0;
+  transition: .3s;
+  z-index: 0;
+  &.masked{
+    opacity: 0.9;
+    z-index: 2;
+  }
+}
+
+@keyframes article{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes hidden{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+
+article{
+  height: 70vh;
+  display: block;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.4);
+  animation : article 3s linear;
+  border-radius: 1.0rem;
+  &.hidden{
+    z-index: 0;
+    display: none;
+  }
+  section{
+    h1{
+      border-bottom: 2px solid #cde;
+    }
+    p{
+      line-height: 3.0rem;
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li{
+        display: block;
+        width: 20.0rem;
+        background-color:#ccc;
+        margin-bottom: 1.0rem;
+        a{
+          img{
+            width: 100%;
+            display: block;
+
+          }
+        }
+
+      }
+    }
+  }
+}

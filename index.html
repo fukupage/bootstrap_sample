@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,119 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
+  <header class="mt-5 p-5">
+    <h1 class="text-center">Bootstrap Sample</h1>
+  </header>
+  <div id="menu_show">
+    <img src="img/humburger.svg" alt="メニュー開ボタン">
+  </div>
+<nav id="nav">
+    <div id="menu_close" class="hidden">
+      <img src="img/close.svg" alt="メニュー閉ボタン">
+    </div>
+    <ul>
+      <li><a id="home" href="#">ホーム</a></li>
+      <li><a id="about" href="#">制作者について</a></li>
+      <li><a id="sample" href="#">サンプルについて</a></li>
+      <li><a id="think" href="#≈">雑感</a></li>
+      <li><a id="form" href="#">お問い合わせ</a></li>
+    </ul>
+  </nav>
+  <div id="mask">&nbsp;</div>
+  <main>
+    <div class="container">
+      <article id="first" class="row pt-5">
+        <section class="col-lg-9 col-md-12">
+          <h1 class="mb-5 pb-5">Bootstrap Sample</h1>
+          <p>
+            本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </p>
+          <p>
+            本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </p>
+          <div>ここらへんにいらすととか</div>
+        </section>
+        <section class="col-lg-3 col-md-12">
+          <ul>
+            <li><a href="#"><img src="img/sample_001.jpg" alt="画像1"></a></li>
+            <li><a href="#"><img src="img/sample_002.jpg" alt="画像2"></a></li>
+            <li><a href="#"><img src="img/sample_003.jpg" alt="画像3"></a></li>
+          </ul>
+        </section>
+      </article>
+      <article id="second" class="row hidden pt-5">
+        <section class="col-lg-3 col-md-12 order-lg-1 order-2">
+          <ul>
+            <li><a href="#"><img src="img/sample_001.jpg" alt="画像1"></a></li>
+            <li><a href="#"><img src="img/sample_002.jpg" alt="画像2"></a></li>
+            <li><a href="#"><img src="img/sample_003.jpg" alt="画像3"></a></li>
+          </ul>
+        </section>
+        <section class="col-lg-9 col-md-12 order-lg-2 order-1">
+          <h1 class="mb-5 pb-5">制作者について</h1>
+          <p>
+            本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </p>
+          <div>ここらへんにいらすととか</div>
+        </section>
+      </article>
+      <article id="third" class="row hidden pt-5">
+        <section class="col-lg-9 col-md-12">
+          <h1 class="mb-5 pb-5">雑感</h1>
+          <p>
+            本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </p>
+          <div>ここらへんにいらすととか</div>
+        </section>
+        <section class="col-lg-3 col-md-12">
+          <ul>
+            <li><a href="#"><img src="img/sample_001.jpg" alt="画像1"></a></li>
+            <li><a href="#"><img src="img/sample_002.jpg" alt="画像2"></a></li>
+            <li><a href="#"><img src="img/sample_003.jpg" alt="画像3"></a></li>
+          </ul>
+        </section>
+      </article>
+      <article id="fourth" class="row hidden pt-5">
+        <section class="col-lg-3 col-md-12 order-lg-1 order-2">
+          <ul>
+            <li><a href="#"><img src="img/sample_001.jpg" alt="画像1"></a></li>
+            <li><a href="#"><img src="img/sample_002.jpg" alt="画像2"></a></li>
+            <li><a href="#"><img src="img/sample_003.jpg" alt="画像3"></a></li>
+          </ul>
+        </section>
+        <section class="col-lg-9 col-md-12 order-lg-2 order-1">
+          <h1 class="mb-5 pb-5">サンプルについて</h1>
+          <p>
+            本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </p>
+          <div>ここらへんにいらすととか</div>
+        </section>
+      </article>
+      <article id="fifth" class="row hidden pt-5">
+        <section class="col-lg-9 col-md-12">
+          <h1 class="mb-5 pb-5">お問い合わせ</h1>
+          <p>
+            本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+          </p>
+          <div>お問い合わせ</div>
+        </section>
+        <section class="col-lg-3 col-md-12">
+          <ul>
+            <li><a href="#"><img src="img/sample_001.jpg" alt="画像1"></a></li>
+            <li><a href="#"><img src="img/sample_002.jpg" alt="画像2"></a></li>
+            <li><a href="#"><img src="img/sample_003.jpg" alt="画像3"></a></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="text-center p-5">
+    &copy;BowWorks
+  </footer>
   <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
