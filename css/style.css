@@ -93,11 +93,22 @@ header {
   -webkit-transition: .3s;
   transition: .3s;
   z-index: 0;
+  display: none;
 }
 
 #mask.masked {
   opacity: 0.9;
   z-index: 2;
+  display: block;
+  -webkit-animation: article .5s linear;
+          animation: article .5s linear;
+}
+
+#mask > div {
+  margin: auto;
+  line-height: 100vh;
+  width: 70vw;
+  text-align: center;
 }
 
 @-webkit-keyframes article {
@@ -137,12 +148,11 @@ header {
 }
 
 article {
-  height: 70vh;
   display: block;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.4);
-  -webkit-animation: article 3s linear;
-          animation: article 3s linear;
+  -webkit-animation: article .5s linear;
+          animation: article .5s linear;
   border-radius: 1.0rem;
 }
 
@@ -166,9 +176,9 @@ article section ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 0;
 }
 
 article section ul li {
@@ -178,8 +188,35 @@ article section ul li {
   margin-bottom: 1.0rem;
 }
 
+article section ul li a {
+  text-align: center;
+}
+
 article section ul li a img {
   width: 100%;
   display: block;
+}
+
+article section form #email {
+  padding: 2.0rem 1.0rem;
+  font-size: 2.0rem;
+}
+
+article section form #textarea {
+  padding: 2.0rem 1.0rem;
+  font-size: 2.0rem;
+}
+
+article section form #check {
+  padding: 2.0rem 1.0rem;
+}
+
+article section form #submit {
+  padding: 1.0rem 2.0rem;
+  font-size: 2.0rem;
+}
+
+footer a {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

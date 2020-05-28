@@ -12,7 +12,7 @@ body {
   background-size: cover;
 }
 
-header{
+header {
   z-index: 0;
 }
 
@@ -82,78 +82,124 @@ header{
   }
 }
 
-#mask{
+#mask {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background:#123;
+  background: #123;
   opacity: 0;
   transition: .3s;
   z-index: 0;
-  &.masked{
+  display: none;
+
+  &.masked {
     opacity: 0.9;
     z-index: 2;
+    display: block;
+    animation: article .5s linear;
+  }
+
+  &>div {
+    margin: auto;
+    line-height: 100vh;
+    width: 70vw;
+    text-align: center;
   }
 }
 
-@keyframes article{
-  from{
+@keyframes article {
+  from {
     opacity: 0;
   }
-  to{
+
+  to {
     opacity: 1;
   }
 }
 
-@keyframes hidden{
-  from{
+@keyframes hidden {
+  from {
     opacity: 1;
   }
-  to{
+
+  to {
     opacity: 0;
   }
 }
 
-
-article{
-  height: 70vh;
+article {
   display: block;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.4);
-  animation : article 3s linear;
+  animation: article .5s linear;
   border-radius: 1.0rem;
-  &.hidden{
+
+  &.hidden {
     z-index: 0;
     display: none;
   }
-  section{
-    h1{
+
+  section {
+    h1 {
       border-bottom: 2px solid #cde;
     }
-    p{
+
+    p {
       line-height: 3.0rem;
     }
-    ul{
+
+    ul {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      li{
+      justify-content: space-around;
+      padding-left: 0;
+
+      li {
         display: block;
         width: 20.0rem;
-        background-color:#ccc;
+        background-color: #ccc;
         margin-bottom: 1.0rem;
-        a{
-          img{
+
+        a {
+          text-align: center;
+
+          img {
             width: 100%;
             display: block;
-
           }
         }
-
       }
     }
+
+    form {
+つh
+      #email {
+        padding: 2.0rem 1.0rem;
+        font-size: 2.0rem;
+      }
+
+      #textarea {
+        padding: 2.0rem 1.0rem;
+        font-size: 2.0rem;
+      }
+
+      #check {
+        padding: 2.0rem 1.0rem;
+      }
+
+      #submit {
+        padding: 1.0rem 2.0rem;
+        font-size: 2.0rem;
+      }
+    }
+  }
+}
+
+footer {
+  a {
+    color: #000;
   }
 }
