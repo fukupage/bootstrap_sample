@@ -50,7 +50,7 @@ header {
   z-index: 8;
   width: 20rem;
   height: 100vh;
-  padding-top: 15.0rem;
+  padding: 15.0rem 0 0 2.0rem;
   background-color: #fff;
 }
 
@@ -58,8 +58,15 @@ header {
   right: 0rem;
 }
 
+#nav ul li {
+  margin-bottom: 1.0rem;
+  border-left: 2px solid #123;
+}
+
 #nav ul li a {
-  background-color: #999;
+  color: #123;
+  font-size: 2.0rem;
+  margin-left: 0.5rem;
 }
 
 #nav #menu_close {
@@ -199,16 +206,25 @@ article section ul li a img {
 
 article section form #email {
   padding: 2.0rem 1.0rem;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
+}
+
+article section form #title {
+  padding: 2.0rem 1.0rem;
+  font-size: 1.5rem;
 }
 
 article section form #textarea {
   padding: 2.0rem 1.0rem;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
 }
 
 article section form #check {
-  padding: 2.0rem 1.0rem;
+  height: 2.0rem;
+}
+
+article section form #check + label {
+  margin-left: 1.0rem;
 }
 
 article section form #submit {
@@ -218,5 +234,14 @@ article section form #submit {
 
 footer a {
   color: #000;
+}
+
+@media (max-width: 991px) {
+  article section:first-child {
+    margin-bottom: 2.0rem;
+  }
+  #mask > div {
+    width: 100vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

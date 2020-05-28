@@ -76,9 +76,6 @@
       <article id="third" class="row hidden pt-5 pb-5">
         <section class="col-lg-9 col-md-12  pl-5 pr-5">
           <h1 class="mb-5 pb-5">サンプルについて</h1>
-          <p>
-            このサンプルはBootstrapのグリッドシステムを利用して、動きはJqueryを利用しています。また、CSSはSASSを利用して記述しています。
-          </p>
           <h2 class="mt-5">コンセプト</h2>
           <p>SPA（シングル・ページ・アプリケーション）風のwebサイトを、できるだけ簡素に作ってみる。</p>
           <h2 class="mt-5">制作背景</h2>
@@ -121,16 +118,21 @@
         <section class="col-lg-9 col-md-12  pl-5 pr-5">
           <h1 class="mb-5 pb-5">お問い合わせ</h1>
           <p>
-            当Webサイトへのご意見は、以下のメールフォームよりお送りくださいますよう、よろしくお願いいたします。
+            当Webサイトへのご意見は以下のメールフォームよりお送りください。
           </p>
-          <form>
+          <small class="text-primary">このフォームはダミーです。ご利用の際はphpなどの送信用のスクリプトを実装してください。</small>
+          <form class="mt-5">
             <div class="form-group">
               <label for="email">Eメールアドレス</label>
               <input type="email" class="form-control" id="email" placeholder="Eメールアドレス">
               <small class="text-muted">あなたのメールは他の誰とも共有しません。</small>
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="textarea" rows="3"></textarea>
+              <label for="title">Eメールアドレス</label>
+              <input type="text" class="form-control" id="title" placeholder="件名">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="textarea" rows="3" placeholder="本文"></textarea>
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="check">

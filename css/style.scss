@@ -48,7 +48,7 @@ header {
     z-index: 8;
     width: 20rem;
     height: 100vh;
-    padding-top: 15.0rem;
+    padding: 15.0rem 0 0 2.0rem;
     background-color: #fff;
 
     &.active {
@@ -56,8 +56,12 @@ header {
     }
 
     li {
+      margin-bottom: 1.0rem;
+      border-left: 2px solid #123;
       a {
-        background-color: #999;
+        color: #123;
+        font-size: 2.0rem;
+        margin-left: 0.5rem;
       }
     }
   }
@@ -175,19 +179,26 @@ article {
     }
 
     form {
-つh
       #email {
         padding: 2.0rem 1.0rem;
-        font-size: 2.0rem;
+        font-size: 1.5rem;
+      }
+
+      #title {
+        padding: 2.0rem 1.0rem;
+        font-size: 1.5rem;
       }
 
       #textarea {
         padding: 2.0rem 1.0rem;
-        font-size: 2.0rem;
+        font-size: 1.5rem;
       }
 
       #check {
-        padding: 2.0rem 1.0rem;
+        height: 2.0rem;
+        &+label{
+          margin-left: 1.0rem;
+        }
       }
 
       #submit {
@@ -201,5 +212,16 @@ article {
 footer {
   a {
     color: #000;
+  }
+}
+
+@media(max-width: 991px){
+  article section:first-child{
+    margin-bottom:2.0rem;
+  }
+  #mask{
+    &>div{
+      width: 100vw;
+    }
   }
 }
